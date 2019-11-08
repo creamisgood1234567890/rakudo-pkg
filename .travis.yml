@@ -7,10 +7,11 @@ env:
 install:
   - choco install strawberryperl
   - ls -la 
-  - cd c:/ && ls -la
-  - cd c:/Strawberry
+  - cd C:\\ && ls -la
+  - cd C:\\Strawberry
   - la -la
-  - C:/Strawberry/bin/cpanm Locale::Maketext::Simple
+  - C:\\Strawberry\\bin\\cpanm Locale::Maketext::Simple
+  - find / -type d 
 #  - curl -sSL -o rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/$RAKUDO_VERSION/rakudo-$RAKUDO_VERSION.tar.gz
 #  - tar xvzf rakudo.tar.gz && pwd
 #  - cd rakudo-$RAKUDO_VERSION
