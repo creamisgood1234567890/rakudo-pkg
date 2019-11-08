@@ -6,7 +6,7 @@ env:
     - RAKUDO_VERSION="2019.07.1"
 install:
   - choco install strawberryperl
-  - cpanm Locale::Maketext::Simple
+  - cpan Locale::Maketext::Simple
   - curl -sSL -o rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/$RAKUDO_VERSION/rakudo-$RAKUDO_VERSION.tar.gz
   - tar xvzf rakudo.tar.gz && pwd
   - cd rakudo-$RAKUDO_VERSION
