@@ -4,8 +4,8 @@ env:
   global:
     - ZEF_VERSION="v0.8.1"
     - RAKUDO_VERSION="2019.07.1"
-    - PATH="$PATH:'C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64'"
 install:
+  - export PATH=$PATH:";C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64"
   - choco install strawberryperl
   - curl -sSL -o rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/$RAKUDO_VERSION/rakudo-$RAKUDO_VERSION.tar.gz
   - tar xvzf rakudo.tar.gz && pwd
