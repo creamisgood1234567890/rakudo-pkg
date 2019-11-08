@@ -7,17 +7,14 @@ env:
 install:
   - choco install strawberryperl
   - ls -la 
-  - cd C:\\ && ls -la
-  - cd C:\\Strawberry
-  - ls -la
-  - C:\\Strawberry\\bin\\cpanm Locale::Maketext::Simple
-  - find / -type d 
-#  - curl -sSL -o rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/$RAKUDO_VERSION/rakudo-$RAKUDO_VERSION.tar.gz
-#  - tar xvzf rakudo.tar.gz && pwd
-#  - cd rakudo-$RAKUDO_VERSION
-#  - perl Configure.pl --gen-moar --gen-nqp --backends=moar --relocatable
-#  - make test
-#  - make install
+  - cd C:/Strawberry
+  - C:/Strawberry/perl/bin/cpanm Locale::Maketext::Simple
+  - curl -sSL -o rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/$RAKUDO_VERSION/rakudo-$RAKUDO_VERSION.tar.gz
+  - tar xvzf rakudo.tar.gz && pwd
+  - cd rakudo-$RAKUDO_VERSION
+  - perl Configure.pl --gen-moar --gen-nqp --backends=moar --relocatable
+  - nmake test
+  - nmake install
 script:
   - true
 #language: generic
