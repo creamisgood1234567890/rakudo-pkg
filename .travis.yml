@@ -13,7 +13,9 @@ install:
   - curl -sSL -o rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/$RAKUDO_VERSION/rakudo-$RAKUDO_VERSION.tar.gz
   - tar xvzf rakudo.tar.gz && pwd
   - cd rakudo-$RAKUDO_VERSION
-  - perl -I"C:\\Strawberry\\perl\\lib" Configure.pl --gen-moar --gen-nqp --backends=moar --relocatable
+#  - perl -I"C:\\Strawberry\\perl\\lib" Configure.pl --gen-moar --gen-nqp --backends=moar --relocatable
+  - which perl
+  - perl Configure.pl --gen-moar --gen-nqp --backends=moar --relocatable
   - nmake test
   - nmake install
 script:
