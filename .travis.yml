@@ -9,7 +9,7 @@ install:
   - ls -la 
   - cd C:\\ && ls -la
   - cd C:\\Strawberry
-  - la -la
+  - ls -la
   - C:\\Strawberry\\bin\\cpanm Locale::Maketext::Simple
   - find / -type d 
 #  - curl -sSL -o rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/$RAKUDO_VERSION/rakudo-$RAKUDO_VERSION.tar.gz
