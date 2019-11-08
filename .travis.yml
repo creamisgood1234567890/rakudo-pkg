@@ -4,12 +4,12 @@ env:
   global:
     - ZEF_VERSION="v0.8.1"
     - RAKUDO_VERSION="2019.07.1"
-    - MODULES="ExtUtils::Manifest Locale::Maketext::Simple"
+    - PERL5LIB="C:/Strawberry/perl/lib"
 install:
   - choco install strawberryperl
   - ls -la 
   - cd C:/Strawberry
-  - C:/Strawberry/perl/bin/cpanm $MODULES
+#  - C:/Strawberry/perl/bin/cpanm $MODULES
   - curl -sSL -o rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/$RAKUDO_VERSION/rakudo-$RAKUDO_VERSION.tar.gz
   - tar xvzf rakudo.tar.gz && pwd
   - cd rakudo-$RAKUDO_VERSION
