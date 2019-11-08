@@ -9,6 +9,7 @@ install:
   - choco install strawberryperl
   - ls -la 
   - cd C:/Strawberry
+  - export PERL5LIB
 #  - C:/Strawberry/perl/bin/cpanm $MODULES
   - curl -sSL -o rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/$RAKUDO_VERSION/rakudo-$RAKUDO_VERSION.tar.gz
   - tar xvzf rakudo.tar.gz && pwd
