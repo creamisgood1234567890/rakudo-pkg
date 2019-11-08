@@ -12,8 +12,8 @@ install:
   - tar xvzf rakudo.tar.gz && pwd
   - cd rakudo-$RAKUDO_VERSION
   - C:/Strawberry/perl/bin/perl Configure.pl --gen-moar --gen-nqp --backends=moar --relocatable
-  - nmake test
-  - nmake install
+  - make test
+  - make install
 script:
   - true
 #language: generic
