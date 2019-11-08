@@ -8,7 +8,7 @@ install:
   - choco install strawberryperl
   - curl -sSL -o rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/$RAKUDO_VERSION/rakudo-$RAKUDO_VERSION.tar.gz
   - tar xvzf rakudo.tar.gz && pwd
-  - cd rakudo*
+  - cd rakudo-$RAKUDO_VERSION
   - perl Configure.pl --gen-moar --gen-nqp --backends=moar --relocatable
   - make test
   - make install
