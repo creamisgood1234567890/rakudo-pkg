@@ -5,20 +5,19 @@ env:
     - ZEF_VERSION="v0.8.1"
     - RAKUDO_VERSION="2019.07.1"
 install:
-  - choco install strawberryperl
-  - perl -V ; true
-  - cd C:/Strawberry
-  - export PATH=$PATH:";C:\Strawberry\perl\bin"
-  - C:/Strawberry/perl/bin/perl -V
+#  - choco install strawberryperl
+#  - cd C:/Strawberry
+#  - export PATH=$PATH:";C:\Strawberry\perl\bin"
+#  - C:/Strawberry/perl/bin/perl -V
 #  - C:/Strawberry/perl/bin/cpanm $MODULES
 #  - curl -sSL -o rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/$RAKUDO_VERSION/rakudo-$RAKUDO_VERSION.tar.gz
 #  - tar xvzf rakudo.tar.gz && pwd
 #  - cd rakudo-$RAKUDO_VERSION
 ##  - perl -I"C:\\Strawberry\\perl\\lib" Configure.pl --gen-moar --gen-nqp --backends=moar --relocatable
 #  - which perl
-#  - perl Configure.pl --gen-moar --gen-nqp --backends=moar --relocatable
-#  - nmake test
-#  - nmake install
+  - perl Configure.pl --gen-moar --gen-nqp --backends=moar --relocatable
+  - nmake test
+  - nmake install
 script:
   - true
 #language: generic
