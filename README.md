@@ -214,3 +214,4 @@ NFPM_VERSION=2.2.3
 
 Issues (bugs and ideas) and PRs are always welcome. See
 [CONTRIBUTING.md](CONTRIBUTING.md).
+
